@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Debaloy</title>
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/home.css">
+</head>
+<body>
+    <table border="1">
+        <!-- header -->
+        <tr class="header">
+            <th colspan="4">DEBALOY | COPA | JS</th>
+        </tr>
+        <!-- navbar -->
+        <tr class="navbar">
+            <th><a onclick="show('home')">Home</a></th>
+            <th><a onclick="show('assignments')">Assignments</a></th>
+            <th><a >Projects</a></th>
+            <th><a >Contact</a></th>
+        </tr>
+        <!-- Home Page Content -->
+        <tr class="content" id="home">
+            <td colspan="4">
+                <p>
+                    This website is made to containerize all the topics which are and will be covered in the COPA course in MERIT under Debaloy Chatterjee. This mainly focusses on JS and basic HTML.
+                </p>
+                <br>
+                <p>
+                    <b>Useful links:</b>
+                    <dl>
+                        <li>
+                            <a href="http://www.merit.ac.in" target="_blank">MERIT Official Website</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html" target="_blank">HTML Resource</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/css" target="_blank">CSS Resource</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/js" target="_blank">JS Resource</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Debaloy/COPA-JS-MERIT">GitHub Repo of this</a>
+                        </li>
+                    </dl>
+                </p>
+            </td>
+        </tr>
+
+		<!-- Assignment Page Content -->
+		<tr class="content" id="assignments">
+			<td colspan="4">
+				<p>
+					<dl>
+						<li>
+							<a href="./assignments/P01_Print_Hello_World/index.html" target="_blank">
+								Printing Hello World On Press of a Button
+							</a>
+						</li>
+						<li>
+							<a href="./assignments/P02_Prompt_Console/index.html" target="_blank">
+								Prompt user to enter name and print in console
+							</a>
+						</li>
+						<li>
+							<a href="./assignments/P03_Change_Div_Color_01/index.html" target="_blank">
+								Change Color Of Div
+							</a>
+						</li>
+						<li>
+                            <a href="./assignments/P04_Change_Div_Color_02/index.html" target="_blank">
+                                Change Color Of Div To Prompt Value
+							</a>
+						</li>
+						<li>
+							<a href="./assignments/P05_Change_Div_Color_03/index.html" target="_blank">
+								Change Color Of Div Randomly
+							</a>
+						</li>
+						<li>
+							<a href="./assignments/P06_Toggle_Visibility/index.html" target="_blank">
+								Toggle Visibility Of A Div
+							</a>
+						</li>
+						<li>
+							<a href="./assignments/P07_Mouse_Over_Heading/index.html" target="_blank">
+								Change Color of Heading On Mouse Over and Mouse Out
+							</a>
+						</li>
+					</dl>
+				</p>
+			</td>
+		</tr>
+
+        <!-- footer -->
+        <tr class="footer">
+            <th colspan="4">&copy; DEBALOY | COPA | JS | 2022</th>
+        </tr>
+    </table>
+
+	<script>
+		let contents = ['home', 'assignments'];
+		show('home');
+
+		function show(element) {
+			for (let i = 0; i < contents.length; i++) {
+				if (contents[i] === element) {
+					document.getElementById(element).style.display = 'table-row';
+				} else {
+					document.getElementById(contents[i]).style.display = 'none';
+				}
+			}
+		}
+	</script>
+</body>
+</html>

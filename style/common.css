@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c1ebfa;
+}
+
+table {
+    width: 70%;
+    margin-left: 15%;
+    height: 100vh;
+    background-color: #cdffda;
+}
+
+/* ---------- HEADER ---------- */
+
+.header {
+    background-color: #f8ffcd;
+    font-size: 20px;
+    height: 40px;
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+    background-color: #ffd6cd;
+    height: 40px;
+}
+
+.navbar th {
+    width: 25%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.navbar a:hover {
+    color: #8d29ff;
+    font-size: 17px;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    background-color: #cddeff;
+    color: #202020;
+    height: 40px;
+}

@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Mouse Over Heading</title>
+	</head>
+	<body>
+		<h1 id="target" onmouseover="changeColor(true)" onmouseout="changeColor(false)">
+			Hover over this to change its color.
+		</h1>
+
+		<input type="button" value="Reset" onclick="document.getElementById('target').style.color = 'black'" />
+
+		<script>
+			function changeColor(flag) {
+				let heading = document.getElementById("target");
+
+				heading.style.color = flag ? "red" : "blue";
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Onclick Change Color</title>
+		<style>
+			div {
+				background-color: #ff00ff;
+				width: 400px;
+				height: 400px;
+				border: 2px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="target"></div>
+
+		<input type="button" value="Change Color!" onclick="changeColor()" />
+
+		<script>
+			function changeColor() {
+				document.getElementById("target").style.backgroundColor = "#1e1e1e";
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Onclick Change Color Randomly</title>
+		<style>
+			div {
+				background-color: #ff00ff;
+				width: 400px;
+				height: 400px;
+				border: 2px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="target"></div>
+
+		<input type="button" value="Change Color!" onclick="changeColor()" />
+
+		<script>
+			let colors = [
+				'#1e1e1e',
+				'#9f2ee5',
+				'#5d490f',
+				'#14bb4d',
+				'#ee6dc4',
+				'#038bce',
+				'#797f37',
+				'#4a8293',
+				'#f5db5a',
+				'#65c8e3',
+				'#952341'
+			];
+
+
+			function changeColor() {
+				let color = colors[Math.floor(Math.random() * colors.length + 1)];
+				document.getElementById("target").style.backgroundColor = color;
+			}
+		</script>
+	</body>
+</html>

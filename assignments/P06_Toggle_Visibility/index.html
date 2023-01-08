@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Toggle Div Visibility</title>
+		<style>
+			div {
+				background-color: #ff00ff;
+				width: 400px;
+				height: 400px;
+				border: 2px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<input id="button" type="button" value="Hide Div!" onclick="toggleVisibility()" />
+		
+		<div id="target"></div>
+
+		<script>
+			let flag = true;
+			
+			function toggleVisibility() {
+				let div = document.getElementById("target");
+				let button = document.getElementById("button");
+
+				div.style.display = flag ? "none" : "block";
+
+				flag = !flag;
+
+				button.value = flag ? "Hide Div!" : "Show Div!";
+			}
+		</script>
+	</body>
+</html>
