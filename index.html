@@ -15,8 +15,8 @@
         <tr class="navbar">
             <th><a onclick="show('home')">Home</a></th>
             <th><a onclick="show('assignments')">Assignments</a></th>
-            <th><a >Projects</a></th>
-            <th><a >Contact</a></th>
+            <th><a onclick="show('projects')">Projects</a></th>
+            <th><a onclick="show('contact')">Contact</a></th>
         </tr>
         <!-- Home Page Content -->
         <tr class="content" id="home">
@@ -41,7 +41,7 @@
                             <a href="https://www.w3schools.com/js" target="_blank">JS Resource</a>
                         </li>
                         <li>
-                            <a href="https://github.com/Debaloy/COPA-JS-MERIT">GitHub Repo of this</a>
+                            <a href="https://github.com/Debaloy/COPA-JS">GitHub Repo of this</a>
                         </li>
                     </dl>
                 </p>
@@ -93,6 +93,25 @@
 			</td>
 		</tr>
 
+        <tr class="content" id="projects">
+            <td colspan="4">
+                <p>None</p>
+            </td>
+        </tr>
+
+        <tr class="content" id="contact">
+            <td colspan="4">
+                <p>
+                    <dl>
+                        <li>Name: Debaloy Chatterjee</li>
+                        <li><a href="https://wa.me/917042756653">Whatsapp</a></li>
+                        <li><a href="mailto:business.debaloy@gmail.com">business.debaloy@gmail.com</a></li>
+                        <li>Discord: <a href="https://discordapp.com/users/963863245180006462">Dvoid#8639</a></li>
+                    </dl>
+                </p>
+            </td>
+        </tr>
+
         <!-- footer -->
         <tr class="footer">
             <th colspan="4">&copy; DEBALOY | COPA | JS | 2022</th>
@@ -100,7 +119,7 @@
     </table>
 
 	<script>
-		let contents = ['home', 'assignments'];
+		let contents = ['home', 'assignments', 'projects', 'contact'];
 		show('home');
 
 		function show(element) {
