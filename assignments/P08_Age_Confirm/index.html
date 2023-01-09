@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Age Confirmation</title>
+</head>
+<body>
+    <input type="button" value="Confirm Age!" onclick="ageConfirmation()" />
+    <input type="button" value="Reset" onclick="location.reload()" />
+    <div id="response"></div>
+
+    <script>
+        function ageConfirmation() {
+            let response = confirm("Are you above the age of 18?");
+            
+            if (response) {
+                document.getElementById("response").innerText = "Your are old enough to vote!";
+            } else {
+                document.getElementById("response").innerText = "Your are not old enough to vote!";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Student Form</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form>
+                    <fieldset>
+                        <legend>Student Form</legend>
+                        <table>
+                            <tr>
+                                <td>Name</td>
+                                <td><input type="text" name="name" id="name"></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td><input type="email" name="email" id="email"></td>
+                            </tr>
+                            <tr>
+                                <td>Phone Number</td>
+                                <td><input type="number" name="phn" id="phn"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="Submit" onclick="submitForm()"></td>
+                                <td><input type="button" value="Reset" onclick="resetForm()"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="Show Details" onclick="showDetails(true)"></td>
+                                <td><input type="button" value="Hide Details" onclick="showDetails(false)"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="Delete A Record" onclick="delRecord()"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+
+        <!-- data -->
+        <tr>
+            <table id="target" border="1"></table>
+        </tr>
+    </table>
+
+    <script src="./script.js"></script>
+</body>
+</html>
