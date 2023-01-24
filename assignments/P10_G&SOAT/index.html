@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G&SOAT</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Form</legend>
+            <div class="entity">
+                <label>A:</label>
+                <input type="number" id="a">
+            </div>
+            <div class="entity">
+                <label>B:</label>
+                <input type="number" id="b">
+            </div>
+            <div class="entity">
+                <label>C:</label>
+                <input type="number" id="c">
+            </div>
+            <div class="button-wrapper">
+                <input type="button" value="Get Result" onclick="getResult()">
+                <input type="button" value="Reset" onclick="resetFields()">
+            </div>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Result</legend>
+            <div class="entity">
+                <label>Maximum:</label>
+                <input type="text" id="max" readonly>
+            </div>
+            <div class="entity">
+                <label>Minimum:</label>
+                <input type="text" id="min" readonly>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

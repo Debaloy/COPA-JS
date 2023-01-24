@@ -1,0 +1,27 @@
+form {
+    width: 20%;
+    margin-left: 40%;
+    font-size: 1.5em;
+    margin-top: 2%;
+}
+
+.entity {
+    width: 100%;
+    margin: 10px 20px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="number"], input[type="text"] {
+    padding: 4px 4px;
+}
+
+input[type="button"] {
+    font-size: .8em;
+    padding: 8px 14px;
+    cursor: pointer;
+    margin: 10px;
+}
