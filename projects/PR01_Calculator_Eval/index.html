@@ -5,43 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator Using Eval</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        button {
-            width: 70px;
-            height: 38px;
-            margin: 2px;
-        }
-
-        input[type="text"] {
-            width: 100%;
-            height: 50px;
-            margin-bottom: 4px;
-            text-align: right;
-            font-size: 2em;
-            letter-spacing: 2px;
-        }
-
-        .container {
-            width: 50%;
-            margin-left: 25%;
-            display: flex;
-            justify-content: center;
-        }
-
-        body {
-            width: 100%;
-            height: 50vh;
-            padding-top: 30vh;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
@@ -98,48 +62,6 @@
         </table>
     </div>
 
-    <script>
-        let result = '', answer;
-
-        function renderResult(flag = true) {
-            document.getElementById("result").value = flag ? result : 'Syntax Error';
-        }
-
-        function keyPressed(key) {
-            if (key === 'po')   result += '(';
-            if (key === 'pc')   result += ')';
-            result += key;
-
-            renderResult();
-        }
-        
-        function clearResult() {
-            result = '';
-            renderResult();
-        }
-
-        function calcResult() {
-            try {
-                answer = eval(result);
-            } catch {
-                return renderResult(false);
-            }
-            result = answer;
-            renderResult();
-        }
-
-        function getPrevResult() {
-            result += answer;
-            renderResult();
-        }
-
-        document.onkeydown = (e) => {
-            if (e.key === 'Backspace') {
-                if (result.length === 0) return;
-                result = result.substring(0, result.length - 1);
-                renderResult();
-            }
-        }
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>

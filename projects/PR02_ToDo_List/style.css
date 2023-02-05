@@ -28,7 +28,20 @@ input {
     color: black;
 }
 
-.todos {
+.add-todo {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type="text"] {
+    width: 50%;
+}
+
+#todos {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -36,11 +49,30 @@ input {
     align-items: center;
 }
 
+.todo-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 6px 0;
+    border: 2px solid white;
+    padding: 8px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px white;
+}
+
 .todo-text {
     font-size: 2em;
     display: inline-block;
+    margin-right: 20px;
+    width: 80%;
+    word-wrap: break-word;
 }
 
 .todo-buttons {
-    margin-left: 20px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
