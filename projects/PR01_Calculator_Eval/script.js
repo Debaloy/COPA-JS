@@ -1,14 +1,23 @@
-let result = "",
-  answer;
+let result = "", answer;
 
 function renderResult(flag = true) {
   document.getElementById("result").value = flag ? result : "Syntax Error";
 }
 
 function keyPressed(key) {
-  if (key === "po") result += "(";
-  if (key === "pc") result += ")";
-  result += key;
+  switch (key) {
+    case 'po': {
+      result += "(";
+    } break;
+
+    case 'pc': {
+      result += ")";
+    } break;
+
+    default: {
+      result += key;
+    }
+  }
 
   renderResult();
 }

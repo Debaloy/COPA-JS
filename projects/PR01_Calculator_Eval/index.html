@@ -12,52 +12,55 @@
 
         <table>
             <tr>
+                <th colspan="7">DCalculator</th>
+            </tr>
+            <tr>
                 <td colspan="7"><input type="text" id="result"></td>
             </tr>
             <tr>
-                <td><button>Rad</button></td>
-                <td><button>Deg</button></td>
-                <td><button onclick="keyPressed('!')">x!</button></td>
-                <td><button onclick="keyPressed('po')">(</button></td>
-                <td><button onclick="keyPressed('pc')">)</button></td>
-                <td><button onclick="keyPressed('%')">%</button></td>
-                <td><button onclick="clearResult()">CE</button></td>
+                <td><button class="opBtn">Rad</button></td>
+                <td><button class="opBtn">Deg</button></td>
+                <td><button class="opBtn" onclick="keyPressed('!')">x!</button></td>
+                <td><button class="opBtn" onclick="keyPressed('po')">(</button></td>
+                <td><button class="opBtn" onclick="keyPressed('pc')">)</button></td>
+                <td><button class="opBtn" onclick="keyPressed('%')">%</button></td>
+                <td><button class="opBtn" onclick="clearResult()">CE</button></td>
             </tr>
             <tr>
-                <td><button>Inv</button></td>
-                <td><button>sin</button></td>
-                <td><button>ln</button></td>
-                <td><button onclick="keyPressed('7')">7</button></td>
-                <td><button onclick="keyPressed('8')">8</button></td>
-                <td><button onclick="keyPressed('9')">9</button></td>
-                <td><button onclick="keyPressed('/')">&divide</button></td>
+                <td><button class="opBtn">Inv</button></td>
+                <td><button class="opBtn">sin</button></td>
+                <td><button class="opBtn">ln</button></td>
+                <td><button class="numBtn" onclick="keyPressed('7')">7</button></td>
+                <td><button class="numBtn" onclick="keyPressed('8')">8</button></td>
+                <td><button class="numBtn" onclick="keyPressed('9')">9</button></td>
+                <td><button class="opBtn" onclick="keyPressed('/')">&divide</button></td>
             </tr>
             <tr>
-                <td><button>&pi;</button></td>
-                <td><button>cos</button></td>
-                <td><button>log</button></td>
-                <td><button onclick="keyPressed('4')">4</button></td>
-                <td><button onclick="keyPressed('5')">5</button></td>
-                <td><button onclick="keyPressed('6')">6</button></td>
-                <td><button onclick="keyPressed('*')">&times;</button></td>
+                <td><button class="opBtn">&pi;</button></td>
+                <td><button class="opBtn">cos</button></td>
+                <td><button class="opBtn">log</button></td>
+                <td><button class="numBtn" onclick="keyPressed('4')">4</button></td>
+                <td><button class="numBtn" onclick="keyPressed('5')">5</button></td>
+                <td><button class="numBtn" onclick="keyPressed('6')">6</button></td>
+                <td><button class="opBtn" onclick="keyPressed('*')">&times;</button></td>
             </tr>
             <tr>
-                <td><button>e</button></td>
-                <td><button>tan</button></td>
-                <td><button>&Sqrt;</button></td>
-                <td><button onclick="keyPressed('1')">1</button></td>
-                <td><button onclick="keyPressed('2')">2</button></td>
-                <td><button onclick="keyPressed('3')">3</button></td>
-                <td><button onclick="keyPressed('-')">&minus;</button></td>
+                <td><button class="opBtn">e</button></td>
+                <td><button class="opBtn">tan</button></td>
+                <td><button class="opBtn">&Sqrt;</button></td>
+                <td><button class="numBtn" onclick="keyPressed('1')">1</button></td>
+                <td><button class="numBtn" onclick="keyPressed('2')">2</button></td>
+                <td><button class="numBtn" onclick="keyPressed('3')">3</button></td>
+                <td><button class="opBtn" onclick="keyPressed('-')">&minus;</button></td>
             </tr>
             <tr>
-                <td><button onclick="getPrevResult()">Ans</button></td>
-                <td><button onclick="keyPressed('E')">EXP</button></td>
-                <td><button onclick="keyPressed('**')">x<sup>y</sup></button></td>
-                <td><button onclick="keyPressed('0')">0</button></td>
-                <td><button onclick="keyPressed('.')">.</button></td>
-                <td><button onclick="calcResult()">&equals;</button></td>
-                <td><button onclick="keyPressed('+')">&plus;</button></td>
+                <td><button class="opBtn" onclick="getPrevResult()">Ans</button></td>
+                <td><button class="opBtn" onclick="keyPressed('E')">EXP</button></td>
+                <td><button class="opBtn" onclick="keyPressed('**')">x<sup>y</sup></button></td>
+                <td><button class="numBtn" onclick="keyPressed('0')">0</button></td>
+                <td><button class="numBtn" class="opBtn" onclick="keyPressed('.')">.</button></td>
+                <td><button class="eqlBtn" onclick="calcResult()">&equals;</button></td>
+                <td><button class="opBtn" onclick="keyPressed('+')">&plus;</button></td>
             </tr>
         </table>
     </div>
