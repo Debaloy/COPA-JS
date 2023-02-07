@@ -1,15 +1,19 @@
 const todo = document.getElementById('todo');
 const todos = document.getElementById('todos');
+const completed = document.getElementById('completed');
 let id = 0;
+let idArray = [];
 
 function addTodo() {
     if (todo.value === '') return alert("Todo is empty");
 
-    id++;
+    if (!idArray.length) id = 1;
+    else id++;
+    idArray.push(id);
     let html = `
         <div class="todo-container" id="todo-${id}">
             <div class="todo-text">
-                ${todo.value}
+                ${id} : ${todo.value}
             </div>
             <div class="todo-buttons">
                 <input type="button" onclick="todoAction('todo-${id}', 0)" style="width: 30px; border-radius: 50%; outline: none; border: none; background-color: green;">
@@ -29,9 +33,12 @@ function todoAction(id, action) {
             element.style.border = "2px solid green";
             element.children[1].children[0].style.backgroundColor = "yellow";
             element.children[1].children[0].setAttribute("onClick", `todoAction('${id}', 2)`);
+            completed.append(element);
         } break;
         
         case 1: {
+            let elementId = id.split('-')[1];
+            idArray = idArray.filter(ids => ids != elementId);
             element.remove();
         } break;
         
@@ -40,6 +47,7 @@ function todoAction(id, action) {
             element.style.border = "2px solid white";
             element.children[1].children[0].style.backgroundColor = "green";
             element.children[1].children[0].setAttribute("onClick", `todoAction('${id}', 0)`);
+            todos.append(element);
         }
     }
 }

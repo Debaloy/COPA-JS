@@ -12,13 +12,23 @@
         <div class="heading">
             <h1>ToDo List</h1>
         </div>
-
+        
         <div class="add-todo">
             <input type="text" id="todo" placeholder="Enter Todo...">
             <input type="button" value="Add" onclick="addTodo()">
         </div>
+        
+        <div id="todos" class="flex-container">
+        </div>
+        
+        <hr style="width: 100%; margin-top: 10px;">
 
-        <div id="todos">
+        <div class="flex-container">
+            <div class="heading">
+                <h1>Completed ToDo's</h1>
+            </div>
+            <div id="completed" class="flex-container">
+            </div>
         </div>
     </div>
 
