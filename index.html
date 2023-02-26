@@ -9,50 +9,67 @@
     <table border="1">
         <!-- header -->
         <tr class="header">
-            <th colspan="4">DEBALOY | COPA | JS</th>
+            <th colspan="5">DEBALOY | COPA | JS</th>
         </tr>
         <!-- navbar -->
         <tr class="navbar">
             <th><a onclick="show('home')">Home</a></th>
+            <th><a onclick="show('homeworks')">Homeworks</a></th>
             <th><a onclick="show('assignments')">Assignments</a></th>
             <th><a onclick="show('projects')">Projects</a></th>
             <th><a onclick="show('contact')">Contact</a></th>
         </tr>
+
         <!-- Home Page Content -->
         <tr class="content" id="home">
-            <td colspan="4">
+            <td colspan="5">
                 <p>
-                    This website is made to containerize all the topics which are and will be covered in the COPA course in MERIT under Debaloy Chatterjee. This mainly focusses on JS and basic HTML.
+                    This website is made to containerize all the topics which are and will be covered in the COPA course at MERIT under Debaloy Chatterjee. This mainly focusses on JS and basic HTML.
                 </p>
                 <br>
                 <p>
                     <b>Useful links:</b>
                     <dl>
-                        <li>
+                        <dt>
                             <a href="http://www.merit.ac.in" target="_blank">MERIT Official Website</a>
-                        </li>
-                        <li>
+						</dt>
+                        <dt>
                             <a href="https://www.w3schools.com/html" target="_blank">HTML Resource</a>
-                        </li>
-                        <li>
+						</dt>
+                        <dt>
                             <a href="https://www.w3schools.com/css" target="_blank">CSS Resource</a>
-                        </li>
-                        <li>
+						</dt>
+                        <dt>
                             <a href="https://www.w3schools.com/js" target="_blank">JS Resource</a>
-                        </li>
-                        <li>
+						</dt>
+                        <dt>
                             <a href="https://github.com/Debaloy/COPA-JS">GitHub Repo of this</a>
-                        </li>
+						</dt>
                     </dl>
                 </p>
             </td>
         </tr>
 
+		<!-- Homeworks Page Content -->
+		<tr class="content" id="homeworks">
+			<td colspan="5">
+				<p>
+					<ul>
+						<li>
+							<a href="./projects/PR03_HTML_CSS_01/index.html" target="_blank">
+								Leonardo da Vinci (HTML, CSS)
+							</a>
+						</li>
+					</ul>
+				</p>
+			</td>
+		</tr>
+
 		<!-- Assignment Page Content -->
 		<tr class="content" id="assignments">
-			<td colspan="4">
+			<td colspan="5">
 				<p>
-					<dl>
+					<ul>
 						<li>
 							<a href="./assignments/P01_Print_Hello_World/index.html" target="_blank">
 								Printing Hello World On Press of a Button
@@ -103,16 +120,16 @@
 								Greatest and Smallest of 3 Numbers
 							</a>
 						</li>
-					</dl>
+					</ul>
 				</p>
 			</td>
 		</tr>
 
         <!-- Projects Page Content -->
         <tr class="content" id="projects">
-            <td colspan="4">
+            <td colspan="5">
                 <p>
-					<dl>
+					<ul>
 						<li>
 							<a href="./projects/PR01_Calculator_Eval/index.html" target="_blank">
 								Calculator using the eval function (ongoing)
@@ -123,25 +140,20 @@
 								ToDo List without localstorage
 							</a>
 						</li>
-						<li>
-							<a href="./projects/PR03_HTML_CSS_01/index.html" target="_blank">
-								Leonardo da Vinci (HTML, CSS)
-							</a>
-						</li>
-					</dl>
+					</ul>
 				</p>
             </td>
         </tr>
 
         <!-- Contact Page Content -->
         <tr class="content" id="contact">
-            <td colspan="4">
+            <td colspan="5">
                 <p>
                     <dl>
-                        <li>Name: Debaloy Chatterjee</li>
-                        <li><a href="https://wa.me/917042756653">Whatsapp</a></li>
-                        <li><a href="mailto:business.debaloy@gmail.com">business.debaloy@gmail.com</a></li>
-                        <li>Discord: <a href="https://discordapp.com/users/1033415779330306158">Dvoid#2949</a></li>
+                        <dd>Debaloy Chatterjee</dd>
+                        <dd><a href="https://wa.me/917042756653">Whatsapp</a></dd>
+                        <dd><a href="mailto:merit.debaloy@gmail.com">merit.debaloy@gmail.com</a></dd>
+                        <dd>Discord: <a href="https://discordapp.com/users/1033415779330306158">Dvoid#2949</a></dd>
                     </dl>
                 </p>
             </td>
@@ -149,12 +161,12 @@
 
         <!-- footer -->
         <tr class="footer">
-            <th colspan="4">&copy; DEBALOY | COPA | JS | 2022 - 2023</th>
+            <th colspan="5">&copy; DEBALOY | COPA | JS | 2022 - 2023</th>
         </tr>
     </table>
 
 	<script>
-		let contents = ['home', 'assignments', 'projects', 'contact'];
+		let contents = ['home', 'homeworks', 'assignments', 'projects', 'contact'];
 		show('home');
 
 		function show(element) {
