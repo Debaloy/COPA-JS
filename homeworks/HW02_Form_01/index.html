@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table border="1">
+        <!-- header -->
+        <tr class="header">
+            <td colspan="2">
+                Sign Up
+            </td>
+        </tr>
+
+        <!-- form body -->
+        <tbody>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" class="form-inputs" placeholder="Enter First Name..."></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" class="form-inputs" placeholder="Enter Last Name..."></td>
+            </tr>
+            <tr>
+                <td>Screen Name</td>
+                <td><input type="text" class="form-inputs" placeholder="Enter Screen Name..."></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                    <select name="day" id="day">
+                        <option value="null">Day</option>
+                        <script>
+                            for(let i = 1; i <= 31; i++) {
+                                document.write(`
+                                    <option value=${i}>${i}</option>    
+                                `)
+                            }
+                        </script>
+                    </select>
+                    <select name="month" id="month">
+                        <option value="null">Month</option>
+                        <script>
+                            for(let i = 1; i <= 12; i++) {
+                                document.write(`
+                                    <option value=${i}>${i}</option>    
+                                `)
+                            }
+                        </script>
+                    </select>
+                    <select name="year" id="year">
+                        <option value="null">Year</option>
+                        <script>
+                            for(let i = 2023; i >= 1950; i--) {
+                                document.write(`
+                                    <option value=${i}>${i}</option>    
+                                `)
+                            }
+                        </script>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" class="form-inputs" data-gender="m">Male
+                    <input type="radio" class="form-inputs" data-gender="f">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select class="form-inputs">
+                        <option value="null"> ---Choose Country--- </option>
+                        <script>
+                            const countries = [
+                                'usa', 'india', 'pakistan', 'mexico', 'europe', 'france', 'italy'
+                            ];
+                            for (let i = 0; i < countries.length; i++) {
+                                document.write(
+                                    `
+                                        <option value="${countries[i]}">
+                                            ${countries[i].charAt(0).toUpperCase() + countries[i].slice(1)}
+                                        </option>
+                                    `
+                                );
+                            }
+                        </script>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" class="form-inputs" placeholder="Enter E-mail..."></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input type="number" class="form-inputs" placeholder="Enter Phone..."></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" class="form-inputs"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td><input type="password" class="form-inputs"></td>
+            </tr>
+        </tbody>
+
+        <!-- footer -->
+        <tr class="footer">
+            <td colspan="2">
+                <button>Submit</button>
+                <button>Cancel</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

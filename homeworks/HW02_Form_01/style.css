@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: hsl(235, 15%, 15%);
+}
+
+table {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.header td, .footer td, .footer button {
+    font-size: 1.8rem;
+    padding: 10px;
+    background-color: hsl(32, 100%, 61%);
+}
+
+.footer {
+    text-align: right;
+}
+.footer button:nth-child(1) {
+    background-color: hsl(100, 49%, 54%);
+}
+.footer button:nth-child(2) {
+    background-color: hsl(0, 100%, 68%);
+}
+
+.footer button {
+    padding: 5px 20px;
+}
+
+
+tbody {
+    background-color: hsl(226, 28%, 18%);
+    font-size: 1.5rem;
+}
+tbody tr td:nth-child(1) {
+    text-align: right;
+}
+tbody tr td {
+    padding: 10px 20px;
+}
+
+
+.header td {
+    text-align: left;
+}
