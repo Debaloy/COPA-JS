@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Maker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-form">
+            <select name="shape" id="shape">
+                <option value="null">Choose Shape</option>
+                <option value="circle">Circle</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="square">Square</option>
+            </select>
+
+            <select name="color" id="color">
+                <option value="null">Choose Color</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="pink">Pink</option>
+            </select>
+
+            <button onclick="draw()">Draw</button>
+        </div>
+        
+        <div id="result"></div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

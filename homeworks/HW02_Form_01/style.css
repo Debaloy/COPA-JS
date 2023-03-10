@@ -50,3 +50,8 @@ tbody tr td {
 .header td {
     text-align: left;
 }
+
+
+select, option {
+    color: black;
+}

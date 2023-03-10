@@ -1,0 +1,63 @@
+:root {
+    --circle-radius: 100px;
+    --rectangle-length: 100px;
+    --rectangle-bredth: 200px;
+    --square-length: 100px;
+}
+
+
+.border {
+    border: 2px solid black;
+}
+
+
+.circle {
+    border-radius: 50%;
+    width: var(--circle-radius);
+    height: var(--circle-radius);
+}
+.rectangle {
+    width: var(--rectangle-length);
+    height: var(--rectangle-bredth);
+}
+.square {
+    width: var(--square-length);
+    height: var(--square-length);
+}
+
+
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.pink {
+    background-color: pink;
+}
+
+
+.container {
+    width: 50%;
+    height: 100vh;
+    margin-left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+select, option, button {
+    font-size: 1.5rem;
+}
+
+#result {
+    margin-top: 10px;
+    height: var(--rectangle-length);
+}

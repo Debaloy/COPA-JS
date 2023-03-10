@@ -46,9 +46,10 @@
                     <select name="month" id="month">
                         <option value="null">Month</option>
                         <script>
-                            for(let i = 1; i <= 12; i++) {
+                            let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+                            for(let i = 0; i <= months.length; i++) {
                                 document.write(`
-                                    <option value=${i}>${i}</option>    
+                                    <option value=${months[i]}>${months[i].charAt(0).toUpperCase() + months[i].slice(1)}</option>    
                                 `)
                             }
                         </script>
