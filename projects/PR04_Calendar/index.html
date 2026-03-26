@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debaloy's Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <div class="nav-controls">
+                    <button class="nav-btn" id="prev-year">
+                        <i class="fas fa-angle-double-left"></i>
+                    </button>
+                    <button class="nav-btn" id="prev-month">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                </div>
+                
+                <div class="month-year-selector">
+                    <select id="month-select" style="display: none;"></select>
+                    <select id="year-select" style="display: none;"></select>
+                    <div class="current-month" id="current-month-year"></div>
+                </div>
+                
+                <div class="nav-controls">
+                    <button class="nav-btn" id="next-month">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                    <button class="nav-btn" id="next-year">
+                        <i class="fas fa-angle-double-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="calendar-grid" id="calendar-grid">
+                <!-- Calendar will be generated here -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal for date details -->
+    <div class="modal" id="date-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Date Details</h2>
+                <button class="close-btn" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-date" id="modal-date"></div>
+                <div class="events-list" id="modal-events">
+                    <!-- Events will be displayed here -->
+                </div>
+                
+                <div class="add-event-form">
+                    <h3>Add New Event</h3>
+                    <form id="event-form">
+                        <div class="form-group">
+                            <label for="event-title">Event Title</label>
+                            <input type="text" id="event-title" placeholder="Enter event title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="event-description">Description</label>
+                            <textarea id="event-description" placeholder="Enter event description"></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Add Event</button>
+                            <button type="button" class="btn btn-secondary" id="cancel-event">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
