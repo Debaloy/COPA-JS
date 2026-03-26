@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Guess The Number | Classic Challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-card">
+            <!-- Header Section -->
+            <div class="header">
+                <i class="fas fa-brain header-icon"></i>
+                <h1>Guess the Number</h1>
+                <p class="description">I'm thinking of a number between <strong>1</strong> and <strong>100</strong></p>
+            </div>
+
+            <!-- Stats Panel -->
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <i class="fas fa-chart-line stat-icon"></i>
+                    <div class="stat-info">
+                        <span class="stat-label">Attempts</span>
+                        <span class="stat-number">
+                            <span id="attemptsValue">0</span>
+                            <span class="stat-separator">/</span>
+                            <span id="maxAttemptsValue">10</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-hourglass-half stat-icon"></i>
+                    <div class="stat-info">
+                        <span class="stat-label">Remaining</span>
+                        <span class="stat-number" id="remainingValue">10</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Section -->
+            <div class="input-section">
+                <div class="input-wrapper">
+                    <i class="fas fa-hashtag input-icon"></i>
+                    <input type="number" id="guessInput" placeholder="Enter your guess" min="1" max="100">
+                </div>
+                <button id="submitBtn" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Submit Guess</span>
+                </button>
+            </div>
+
+            <!-- Result Area -->
+            <div class="result-card" id="resultCard">
+                <i class="fas fa-info-circle result-icon"></i>
+                <p id="resultText">Ready to play? Make your first guess!</p>
+            </div>
+
+            <!-- History Section -->
+            <div class="history-card">
+                <div class="history-header">
+                    <i class="fas fa-list-ul"></i>
+                    <span>Guess History</span>
+                    <i class="fas fa-chevron-down history-toggle"></i>
+                </div>
+                <div class="history-content" id="historyContent">
+                    <div class="history-empty">
+                        <i class="fas fa-inbox"></i>
+                        <p>No guesses yet</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Game Button -->
+            <button id="newGameBtn" class="btn btn-secondary">
+                <i class="fas fa-sync-alt"></i>
+                <span>New Game</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
